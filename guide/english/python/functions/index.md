@@ -85,6 +85,18 @@ result2 = sum(b=2, 3)
 #Will raise SyntaxError
 ```
 
+If you want to handle a variable number of parameters, use `*`args as a parameter name
+
+'''Python
+def multi(`*`args):
+  mult = 1
+  for ar in args:
+    mult = mult * ar
+  return mult
+
+result = mult(1, 2, 3, 4)
+#result = 24
+
 Functions are also Objects, so you can assign them to a variable, and use that variable like a function.
 
 ```python
